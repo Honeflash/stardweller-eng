@@ -1,0 +1,31 @@
+footer{
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+}
+
+#page-top{
+    background-image: linear-gradient(navy, black);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    border-radius: 10%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-image: linear-gradient(blue, black);
+    border-image-repeat: repeat;
+    padding: 1px;
+
+    h1{
+        color: white;
+        font-family: "Carter One";
+        font-size: 50px;
+        padding-bottom: 0px;
+    }
+
+    p{
+        text-decoration: underline;
+        font-family: "Carter One";
+        padding-top: 0px;
+    }
+}
