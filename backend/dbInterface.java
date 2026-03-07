@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class dbInterface {
 
+    // List of permanent strings to be used
     static final String URL = "jdbc:mysql://sql5.freesqldatabase.com:3306/sql5818418";
     static final String USERNAME = "sql5818418";
     static final String PASSWORD = "N6hXtIzRrG";
