@@ -12,11 +12,11 @@
         <link rel="icon" type="image/png" href="images\favicon\web-app-manifest-512x512.png">
         <link rel="stylesheet" href="style.css"> <!--Add a stylesheet to the webpage to customize text/color-->
 
+        
     </head>
 
     <!--Set up the content to be displayed on the webpage-->
     <body>
-
         <header id="page-top">
             <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
             <h1>English to Stardweller Translator</h1>
@@ -24,7 +24,34 @@
                 time, all words being stored via database.</p>
         </header>
 
-        <p>Test</p>
+        <h2 id="under-header-menu">
+            <a href="index.html">Home</a> Requests <a href="mailto:honeflash.studios@gmail.com">Email</a> <a href="https://honeflash.github.io">Github</a>
+        </h2>
+
+        <p>To properly use the translator, type your text <u>in English</u> in the field below labeled English. In the field below that one is where
+        the resulting Stardweller text will appear. Separate all words by spaces. If there is certain text that you do not want translated, put it in
+        quotation marks. It will be ignored.</p>
+
+        <p id="line"> </p>
+
+        <!--Define the text fields for showing user input and database output-->
+        <h2 id="text-field-header">English</h2>
+        <textarea id="eng-area" name="english-textarea" placeholder="Type here..." ></textarea>
+        <button type="button" id="send-query">Translate</button>
+
+        <h2 id="text-field-header">Stardweller</h2>
+        <textarea id="str-area" name="stardweller-textarea" placeholder="Response comes out here..." readonly></textarea>
+        <button type="button" id="copy-text">Copy</button>
+
+        <footer>
+            <hr>
+            Created by: Honeflash<br>
+            &copy; Copyright <span id="year">.</span>, all rights reserved<br>
+            
+        </footer>
+
+        <!--Add the main javascript file to the webpage. Added here to ensure all elements are properly loaded in first-->
+        <script src="frontend\main.js"></script>
     </body>
 
 </html>
