@@ -83,11 +83,6 @@ button {
     
 }
 
-#line {
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-}
-
 #text-field-header {
     text-align: center;
 }
