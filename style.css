@@ -10,7 +10,27 @@ body, html {
 p {
     font-family: "Carter One", "Times New Roman", Times, serif;
     font-size: 18px;
+body, html {
+    background-color: rgb(20, 31, 66);
     color: white;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Carter One", "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: white;
+}
+
+h2 {
+    font-family: "Carter One", "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+
+footer {
 }
 
 h2 {
@@ -48,8 +68,37 @@ button {
     font-style: italic;
     width: 10vw;
     height: 2vw;
+    font-size: 12px;
 }
 
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 90vw;
+    height: 25vh;
+    padding: 10px;
+    resize: none;
+    font-size: 14px;
+    font-family: "Carter One", "Times New Roman", Times, serif;
+    
+    background-color: rgba(1, 1, 1, 0.5);
+    color: white;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    margin-left: 86px;
+    font-family: "Carter One", "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    width: 10vw;
+    height: 2vw;
+}
+
+#page-top {
 #page-top {
     background-image: linear-gradient(navy, black);
     background-repeat: no-repeat;
@@ -58,15 +107,21 @@ button {
     padding: 1px;
 
     h1 {
+    h1 {
         color: white;
         font-family: "Carter One", "Times New Roman", Times, serif;
+        font-family: "Carter One", "Times New Roman", Times, serif;
         font-size: 50px;
+        font-weight: bold;
         font-weight: bold;
         padding-bottom: 0px;
     }
 
     p {
+    p {
         text-decoration: underline;
+        font-family: "Carter One", "Times New Roman", Times, serif;
+        font-size: 22px;
         font-family: "Carter One", "Times New Roman", Times, serif;
         font-size: 22px;
         padding-top: 0px;

@@ -1,3 +1,5 @@
+document.getElementById('year').innerText = new Date().getFullYear();
+
 const copyButton = document.getElementById('copy-text');
 copyButton.addEventListener("click", function toClipboard() {
     try {
@@ -6,5 +8,3 @@ copyButton.addEventListener("click", function toClipboard() {
             console.error("Failed to copy.", error);
         }
 });
-
-document.getElementById('year').innerText = new Date().getFullYear();
