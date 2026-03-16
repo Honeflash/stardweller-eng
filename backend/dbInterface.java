@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class dbInterface {
 
     // List of permanent strings to be used
-    static final String URL = "jdbc:mysql://sql5.freesqldatabase.com:3306/sql5818418";
-    static final String USERNAME = "sql5818418";
-    static final String PASSWORD = "N6hXtIzRrG";
+    static final String URL = "jdbc:mysql://localhost:5432/postgres";
+    static final String USERNAME = "postgres";
+    static final String PASSWORD = "Sempires1@";
     static final String MAIN_MENU = "Select an option from the list of available service in this interface:\n"
     + "1) View the entire table\n2) Add to the table\n3) Close connection & Log off\n" +"H) Help\n\nYour Choice: ";
     static final String GET_ALL_QUERY = "SELECT * FROM Words ORDER BY English ASC";
