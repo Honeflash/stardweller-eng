@@ -11,8 +11,6 @@
         <title>English to Stardweller Translator</title>
         <link rel="icon" type="image/png" href="images\favicon\web-app-manifest-512x512.png">
         <link rel="stylesheet" href="style.css"> <!--Add a stylesheet to the webpage to customize text/color-->
-
-        
     </head>
 
     <!--Set up the content to be displayed on the webpage-->
@@ -32,7 +30,7 @@
         the resulting Stardweller text will appear. Separate all words by spaces. If there is certain text that you do not want translated, put it in
         quotation marks. It will be ignored.</p>
 
-        <p id="line"> </p>
+        <hr>
 
         <!--Define the text fields for showing user input and database output-->
         <h2 id="text-field-header">English</h2>
@@ -41,7 +39,7 @@
 
         <h2 id="text-field-header">Stardweller</h2>
         <textarea id="str-area" name="stardweller-textarea" placeholder="Response comes out here..." readonly></textarea>
-        <button type="button" id="copy-text">Copy</button>
+        <div id="empty-div"><button type="button" id="copy-text">Copy</button> <p id="empty-msg"></p></div>
 
         <footer>
             <hr>

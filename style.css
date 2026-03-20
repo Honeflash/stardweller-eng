@@ -49,29 +49,30 @@ button {
     width: 10vw;
     height: 2vw;
 }
-
+/*------------------------------------------- ALL CSS INVOLVING THE PAGE-TOP ID -------------------------------------------*/
 #page-top {
     background-image: linear-gradient(navy, black);
     background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 1px;
+}
 
-    h1 {
+#page-top h1 {
         color: white;
         font-family: "Carter One", "Times New Roman", Times, serif;
         font-size: 50px;
         font-weight: bold;
         padding-bottom: 0px;
-    }
+}
 
-    p {
+#page-top p {
         text-decoration: underline;
         font-family: "Carter One", "Times New Roman", Times, serif;
         font-size: 22px;
         padding-top: 0px;
-    }
 }
+/*------------------------------------------- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -------------------------------------------*/
 
 #under-header-menu {
     background-image: linear-gradient(navy, black);
@@ -91,3 +92,15 @@ button {
 #text-field-header {
     text-align: center;
 }
+
+/*------------------------------------------- ALL CSS INVOLVING THE EMPTY-DIV ID -------------------------------------------*/
+#empty-div {
+    display: flex;
+    align-items: left;
+}
+
+#empty-div p {
+    padding-left: 200px;
+    padding-top: 8px;
+}
+/*------------------------------------------- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -------------------------------------------*/
