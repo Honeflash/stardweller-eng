@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!--Says that this file is an html5 type file.-->
 
 <html>
-    <!--Set up the head information-->
+    <!--Set up the head information to define the basics for the HTML file-->
     <head>
         <meta charset="UTF-8"> <!--Allows the html file to display up-to-date, non ASCII characters & emojis-->
         <meta http-equiv="X UA-Compatible" content="IE=edge"> <!--Allows the file to display in ways similar to modern browser wepages-->
@@ -39,9 +39,13 @@
 
         <h2 id="text-field-header">Stardweller</h2>
         <textarea id="str-area" name="stardweller-textarea" placeholder="Response comes out here..." readonly></textarea>
-        <button type="button" id="copy-text">Copy</button>
+        <div id="empty-div">
+            <button type="button" id="copy-text">Copy</button> 
+            <p id="empty-msg"></p> <!--Handles displaying either an error or success message for when the user interacts with the copy button-->
+        </div>
 
         <footer>
+            <!--Contains crediting-->
             <hr>
             Created by: Honeflash<br>
             &copy; Copyright <span id="year">.</span>, all rights reserved<br>
