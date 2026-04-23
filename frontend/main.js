@@ -23,12 +23,12 @@ copyButton.addEventListener("click", function() {
 
 // -------------------------------------------- Handles using the translate button on the webpage --------------------------------------------
 const translateButton = document.getElementById('send-query');
-const url = "https://honeflash.github.io/stardweller-eng";
+const url = "https://honeflash.github.io/stardweller-eng/translator";
 
 translateButton.addEventListener("click", function() {              // Basic testing function for managing api calls.
     let baseData = document.getElementById('eng-area').value;       // Gets the current value from the textarea to send in a fetch request
 
-    fetch(`${url}/translator?initString=${encodeURIComponent(baseData)}`)
+    fetch(`${url}?initString=${encodeURIComponent(baseData)}`)
         .then(response => response.text())
         .then(data => {                                             // For testing, data is sent to the console, and displayed in the second textarea
         console.log(data)
