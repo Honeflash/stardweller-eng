@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: stardweller-eng
-    runtime: java
-    buildCommand: mvn -B package -DskipTests
-    startCommand: java -jar target/*.jar
-    envVars:
-      - key: DB_URL
-        sync: false  # This tells Render the value will be set manually in the dashboard

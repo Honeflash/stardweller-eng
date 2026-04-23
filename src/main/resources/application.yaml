@@ -1,5 +1,11 @@
 spring:
   application:
-    name: backend
-  server:
-    port: 8080
+    name: stardweller-eng
+  datasource:
+    url: ${DB_URL}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+
+server:
+  port: ${PORT:8080}
