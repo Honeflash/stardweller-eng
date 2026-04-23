@@ -12,11 +12,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 21          # ✅ Matches pom.xml java.version
+    - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: '21'         # ✅ Fixed from 17 → 21
+        java-version: '21'
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      env:
+        DB_URL: ${{ secrets.DB_URL }}
       run: mvn -B package --file pom.xml
