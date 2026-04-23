@@ -1,3 +1,5 @@
 spring:
   application:
-    name: setup
+    name: backend
+  server:
+    port: 8080
