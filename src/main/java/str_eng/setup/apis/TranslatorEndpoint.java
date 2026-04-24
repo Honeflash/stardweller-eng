@@ -18,13 +18,13 @@ import str_eng.setup.database.ConnectionSetup;
 public class TranslatorEndpoint {
 
     // Define private variables for this program containing database query information
-    private static String SEARCH_QUERY = "SELECT ? FROM ? WHERE ? = ?";
     private static String COLUMN_1 = "english";
     private static String COLUMN_2 = "stardweller";
     private static String TABLE_NAME = "words";
     
     private static PreparedStatement setupPreparedStatement(Connection c, String word) throws SQLException {
-        PreparedStatement ps = c.prepareStatement(SEARCH_QUERY);
+        String query = String.format("SELECT %s FROM %s WHERE %s = ?", COLUMN_2, TABLE_NAME, COLUMN_1);
+        PreparedStatement ps = c.prepareStatement(query);
         ps.setString(1, COLUMN_2);
         ps.setString(2, TABLE_NAME);
         ps.setString(3, COLUMN_1);
