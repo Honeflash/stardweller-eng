@@ -25,10 +25,7 @@ public class TranslatorEndpoint {
     private static PreparedStatement setupPreparedStatement(Connection c, String word) throws SQLException {
         String query = String.format("SELECT %s FROM %s WHERE %s = ?", COLUMN_2, TABLE_NAME, COLUMN_1);
         PreparedStatement ps = c.prepareStatement(query);
-        ps.setString(1, COLUMN_2);
-        ps.setString(2, TABLE_NAME);
-        ps.setString(3, COLUMN_1);
-        ps.setString(4, word.toLowerCase());
+        ps.setString(1, word.toLowerCase());
 
         return ps;
     }
